@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.focus-border {
+  position: relative;
+}
+
+.focus-border::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4299e1; /* Ganti warna sesuai kebutuhan */
+  transition: width 0.3s ease; /* Atur durasi dan efek animasi */
+}
+
+.focus-border:focus-within::before {
+  width: 100%;
+}

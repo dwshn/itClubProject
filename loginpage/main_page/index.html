@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Utama - IT Club Nedukabta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="image/IT.png" type="image/x-icon" />
+  </head>
+  <body id="home">
+    <!-- header start -->
+    <header
+      class="bg-blueprim absolute top-0 left-0 w-full flex justify-center items-center z-30 py-4 lg:py-6"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center mx-4 lg:mx-20">
+          <div class="flex items-center w-2/3 patka:w-full">
+            <a
+              href="#home"
+              class="w-[20%] mr-2 mobilel:w-[13%] md:w-[40px] lg:w-[50px] patka:w-[100px]"
+              ><img src="image/IT.png" alt="Logo IT"
+            /></a>
+            <a
+              href="#home"
+              class="text-slate-300 font-semibold text-base block lg:text-xl lg:font-bold patka:text-4xl"
+              >ITClub Nedukabta</a
+            >
+          </div>
+          <div id="profil" class="flex items-center px-4">
+            <button
+              class="flex items-center justify-center w-full h-[37px] bg-slate-300 rounded-md lg:w-full lg:h-[60px] relative"
+            >
+              <p class="hidden pl-3 md:block patka:text-xl patka:font-semibold">
+                Admin
+              </p>
+              <img
+                src="image/profile.jpg"
+                alt="user"
+                class="w-[25px] ml-2 mr-1 lg:mx-2 lg:w-[40px] rounded-full patka:w-[50px]"
+              />
+              <div class="arrow-down mr-2 lg:mr-3 transisi" id="row"></div>
+            </button>
+
+            <nav
+              id="prfl-menu"
+              class="hidden absolute py-5 bg-slate-300 shadow-lg rounded-lg max-w-[300px] w-full right-0 top-full patka:max-w-[500px] patka:py-10"
+            >
+              <div class="w-full flex justify-center flex-wrap">
+                <div class="flex justify-center">
+                  <img
+                    src="image/profile.jpg"
+                    alt="user"
+                    class="w-1/3 rounded-full patka:w-1/2"
+                  />
+                </div>
+                <div class="w-full flex justify-center my-2 patka:my-6">
+                  <a
+                    href="#"
+                    class="font-medium text-md hover:text-blueprim patka:text-2xl patka:font-semibold"
+                    >Admin</a
+                  >
+                </div>
+              </div>
+              <div class="m-6">
+                <a
+                  href="#"
+                  class="font-medium text-md text-red-600 patka:font-semibold patka:text-xl"
+                >
+                  <i class="bi bi-box-arrow-left"></i>
+                  Keluar / Ganti Akun
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- sidebar start -->
+    <div class="flex items-center px-4">
+      <button
+        id="hamburger"
+        name="hamburger"
+        type="button"
+        class="bg-slate-300 px-5 py-1 left-0 block top-[85px] fixed z-30 rounded-tr-full rounded-br-full md:top-[130px] patka:top-[160px]"
+      >
+        <span
+          class="w-[18px] h-[2px] my-1 block bg-slate-600 transition duration-300 ease-in-out origin-top-left lg:w-[30px] lg:my-2"
+        ></span>
+        <span
+          class="w-[18px] h-[2px] my-1 block bg-slate-600 transition duration-300 ease-in-out lg:w-[30px] lg:my-2"
+        ></span>
+        <span
+          class="w-[18px] h-[2px] my-1 block bg-slate-600 transition duration-300 ease-in-out origin-bottom-left lg:w-[30px] lg:my-2"
+        ></span>
+      </button>
+
+      <nav
+        id="nav-menu"
+        class="hidden fixed top-[65px] left-0 pt-14 pb-5 bg-slate-300 shadow-lg rounded-lg w-full max-w-[250px] md:top-[98px] md:pt-24 lg:top-[102px] lg:pt-20 h-screen z-20 patka:top-[132px]"
+      >
+        <ul class="block">
+          <li class="group">
+            <a
+              href="#"
+              class="text-base py-2 mx-8 flex text-slate-600 transisi hover:text-blueprim hover:underline patka:text-2xl patka:font-semibold"
+              >Dasbor</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="text-base py-2 mx-8 flex text-slate-600 transisi hover:text-blueprim hover:underline patka:text-2xl patka:font-semibold"
+              >Modul Pembelajaran</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="text-base py-2 mx-8 flex text-slate-600 transisi hover:text-blueprim hover:underline patka:text-2xl patka:font-semibold"
+              >Tugas</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="text-base py-2 mx-8 flex text-slate-600 transisi hover:text-blueprim hover:underline patka:text-2xl patka:font-semibold"
+              >Absensi</a
+            >
+          </li>
+          <li class="group">
+            <a
+              href="#"
+              class="text-base py-2 mx-8 flex text-slate-600 transisi hover:text-blueprim hover:underline patka:text-2xl patka:font-semibold"
+              >Portofolio</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex justify-center items-end h-full max-h-[50%] -mt-6">
+          <img src="image/hero2.png" alt="sidebar image" class="w-1/2" />
+        </div>
+      </nav>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- Hero Start -->
+    <div
+      class="flex justify-center w-full mt-[130px] lg:mt-[170px] patka:mt-[230px]"
+    >
+      <div class="container">
+        <div
+          class="flex flex-wrap justify-between items-center mx-4 px-6 bg-slate-300 rounded-lg md:mx-20 lg:mx-52 relative patka:mx-[400px]"
+        >
+          <div>
+            <div class="pt-4 lg:pt-10 patka:pt-28">
+              <p class="text-xs patka:text-2xl">Sabtu, 02 Desember 2023</p>
+            </div>
+            <div class="pt-10 pb-10 lg:pb-16 patka:pb-32">
+              <h1 class="font-bold text-2xl lg:text-3xl patka:text-5xl">
+                Selamat Datang, Admin!
+              </h1>
+              <p class="text-[11px] lg:text-xs patka:text-xl patka:mt-2">
+                Semoga pembelajaranmu hari ini menyenangkan
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-1/3 hidden absolute md:block md:right-0 md:bottom-[5px] patka:-right-[190px] laptopl:-right-[100px] laptopl:bottom-0"
+          >
+            <img
+              src="image/hero1.png"
+              alt="hero image"
+              class="md:w-[500px] laptopl:w-[70%]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero end -->
+
+    <!-- main page start -->
+    <div class="flex justify-center w-full my-28 patka:my-60">
+      <div class="container">
+        <div class="w-full flex justify-center mb-10">
+          <h1 class="text-2xl font-bold lg:text-4xl patka:text-5xl">
+            Statistik Anda
+          </h1>
+        </div>
+        <div class="md:flex md:justify-center">
+          <div
+            class="grid grid-cols-1 mx-4 md:mx-20 md:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
+            <div
+              class="bg-blueprim bg-cover bg-no-repeat w-full relative rounded-lg text-white"
+            >
+              <div class="p-10 patka:w-[500px] patka:h-[360px]">
+                <h1 class="text-4xl font-semibold patka:text-5xl">0</h1>
+                <p class="text-lg patka:text-3xl">Modul Pembelajaran</p>
+                <div class="text-right mt-20 patka:mt-40">
+                  <a href="#" class="text-sm underline patka:text-2xl"
+                    >Lihat Modul</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-blueprim bg-cover bg-no-repeat w-full relative rounded-lg text-white"
+            >
+              <div class="p-10 patka:w-[500px] patka:h-[360px]">
+                <h1 class="text-4xl font-semibold patka:text-5xl">0</h1>
+                <p class="text-lg patka:text-3xl">Tugas Anda</p>
+                <div class="text-right mt-20 patka:mt-40">
+                  <a href="#" class="text-sm underline patka:text-2xl"
+                    >Lihat Tugas</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-blueprim bg-cover bg-no-repeat w-full relative rounded-lg text-white"
+            >
+              <div class="p-10 patka:w-[500px] patka:h-[360px]">
+                <h1 class="text-4xl font-semibold patka:text-5xl">N/A</h1>
+                <p class="text-lg patka:text-3xl">Top IT Club Member</p>
+                <div class="text-right mt-20 patka:mt-40">
+                  <a href="#" class="text-sm underline patka:text-2xl"
+                    >Lihat Rank</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main page end -->
+
+    <!-- footer start -->
+    <footer class="flex justify-center bottom-0 bg-slate-300 overflow-x-hidden">
+      <div class="container">
+        <div
+          class="grid grid-cols-1 gap-12 py-10 mx-10 lg:grid-cols-3 lg:gap-2 lg:ml-20 lg:-mr-36"
+        >
+          <div
+            class="w-1/2 lg:flex lg:justify-center lg:items-center lg:-mr-52 lg:order-last"
+          >
+            <img src="image/IT.png" alt="Logo" class="w-2/3 md:w-1/2 lg:2/3" />
+          </div>
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div>
+              <h1 class="text-xl lg:text-2xl font-semibold patka:text-4xl">
+                Program
+              </h1>
+              <ul class="list-disc">
+                <li class="patka:text-2xl">Web Development</li>
+                <li class="patka:text-2xl">Pemrograman Dasar</li>
+              </ul>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-2xl font-semibold patka:text-4xl">
+                Desain
+              </h1>
+              <ul class="list-disc">
+                <li class="patka:text-2xl">UI/UX Design</li>
+                <li class="patka:text-2xl">Graphic Design</li>
+              </ul>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-2xl font-semibold">Jaringan</h1>
+              <ul class="list-disc">
+                <li class="patka:text-2xl">Cisco</li>
+                <li class="patka:text-2xl">Mikrotik</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="-ml-5 flex">
+              <h1><i class="bi bi-geo-alt mr-1 patka:text-2xl"></i></h1>
+              <a href="#" class="patka:text-2xl">
+                <p>
+                  JL.RAYA MAUK KM.12 SEPATAN TANGERANG, Pisangan Jaya, Kec.
+                  Sepatan, Kab. Tangerang Prov. Banten
+                </p>
+              </a>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-2xl font-semibold patka:text-4xl">
+                Kontak Kami
+              </h1>
+              <ul class="list-disc">
+                <li class="patka:text-2xl">
+                  <a href="#">Nama: 08123456789</a>
+                </li>
+                <li class="patka:text-2xl">
+                  <a href="#">Nama: 08123456789</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

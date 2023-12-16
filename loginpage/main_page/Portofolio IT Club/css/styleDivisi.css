@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/Poppins/Poppins-Regular.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../font/Poppins/Poppins-Bold.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins';
+}
+
+/* nav */
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(222, 222, 222, .1);
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+nav .it-club {
+    display: flex;
+    align-items: center;
+}
+
+nav .it-club h1 {
+    font-size: 1.3em;
+    color: #eaeaee;
+    margin-left: -12px;
+}
+
+nav .it-club img {
+    width: 28px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 55%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(234, 234, 238, .95);
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px 0 5px rgba(234, 234, 238, .95);
+}
+
+/* about us*/
+.about-us {
+    display: flex;
+    max-height: 300px;
+    background-color: white;
+    padding-left: 50px;
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-us .container .content .divisi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-us .container .content .divisi>*, 
+.about-us .container .content .address>* {
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.about-us .container .content  ul  {
+    margin-left: 20px;
+}
+
+.about-us .container .content .address p {
+    text-indent: -12px;
+    margin-left: 20px;
+}
+
+.about-us .container .content .address p::before {
+    content: url(../image/marker-03.png);
+    transform: translate(0px, 5px); 
+    display: inline-block;
+    scale: .7;
+}
+
+
+.about-us .icon {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.about-us .icon img {
+    border-radius: 50%;
+}
+
+.about-us h1 {
+    font-weight: 100;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.about-us h1::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/home-05.svg);
+    background-size: cover;
+    background-position: 0 2px;
+}
+
+/* style */
+.main {
+    min-height: 100vh;
+    background-color: rgba(100, 181, 246, 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.main a::before {
+    content: url('../image/Group\ 52.png');
+    display: inline-block;
+    margin-right: -4px;
+    scale: .55;
+    vertical-align: middle;
+}
+
+.main header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.main header h1 {
+    color: rgba(234, 234, 234, 0.8);
+    font-family: poppins-bold;
+    font-size: 7em;
+    margin-top: 50px;
+    line-height: 75px;
+    text-shadow: 1px 4px 6px rgba(100, 181, 246, 1), 0 0 0 #000, 1px 4px 6px rgba(100, 181, 246, 1);
+    width: 600px;
+}
+
+.main header h1::first-line {
+    font-size: .5em;
+    color: rgba(21, 101, 192, .8);
+}
+
+
+.main header .icon {
+    margin-top: -30px;
+    margin-bottom: -40px;
+    scale: .9;
+}
+
+.main header .icon .pict-1,.pict-2,.pict-3  {
+    position: absolute;
+    scale: .64;
+    z-index: 4;
+}
+
+.main header .icon .pict-1 {
+    transform: translate(250px, -100px);
+}
+
+.main header .icon .pict-2 {
+    transform: translate(-10px, -60px);
+}
+  
+.main header .icon .pict-3 {
+    transform: translate(-200px, 40px);
+}
+
+.main header .icon .ranman {
+    z-index: 3;
+    position: relative;
+}
+
+.main header .icon::after {
+    content: url('../image/Vector-1.png'); 
+    position: absolute;
+    transform: translateX(-580px);
+    scale: .64;
+    z-index: 2;
+}
+
+.main header .icon::before {
+    content: url('../image/Vector.png'); 
+    position: absolute;
+    scale: .64;
+    z-index: 1;
+    transform: rotate(5deg) translate(100px, -50px);
+}
+
+.main .desk {
+    color: #eaeaea;
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 0 30px;
+}
+
+.main .desk .main-idea {
+    text-indent: 30px;
+}
+
+.main .desk ul {
+    margin:5px 0;
+}
+
+.main .desk ul li{
+    margin-left: 30px;
+    color: rgba(21, 101, 192, 1);
+}
+
+.main .desk ul li p {
+    color: #eaeaea;
+}
+
+.main .desk ul li p::first-line {
+    font-weight: bold;
+    font-family: poppins-bold;
+    color: rgba(21, 101, 192, 1);
+}
+
+/* senpai */
+.senpai {
+    display: flex;
+    color: #eaeaea;
+    background-color: rgba(21, 101, 192, 1);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 120px;
+    gap: 100px;
+}
+
+.senpai .profile {
+    text-align: center;
+}
+
+
+
+
+
+
+
+

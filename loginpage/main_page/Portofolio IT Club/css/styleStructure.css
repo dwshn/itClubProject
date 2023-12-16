@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/Poppins/Poppins-Regular.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../font/Poppins/Poppins-Bold.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins';
+}
+
+/* nav */
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(222, 222, 222, .1);
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+nav .it-club {
+    display: flex;
+    align-items: center;
+}
+
+nav .it-club h1 {
+    font-size: 1.3em;
+    color: #eaeaee;
+    margin-left: -12px;
+}
+
+nav .it-club img {
+    width: 28px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 55%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(234, 234, 238, .95);
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px 0 5px rgba(234, 234, 238, .95);
+}
+
+/* about us*/
+.about-us {
+    display: flex;
+    max-height: 300px;
+    background-color: white;
+    padding-left: 50px;
+}
+
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us .content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-us .container .content .divisi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-us .container .content .divisi>*, 
+.about-us .container .content .address>* {
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.about-us .container .content  ul  {
+    margin-left: 20px;
+}
+
+.about-us .container .content .address p {
+    text-indent: -12px;
+    margin-left: 20px;
+}
+
+.about-us .container .content .address p::before {
+    content: url(../image/marker-03.png);
+    transform: translate(0px, 5px); 
+    display: inline-block;
+    scale: .7;
+}
+
+
+.about-us .icon {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.about-us .icon img {
+    border-radius: 50%;
+}
+
+.about-us h1 {
+    font-weight: 100;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.about-us h1::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../image/home-05.svg);
+    background-size: cover;
+    background-position: 0 2px;
+}
+
+/* sructure */
+.structure-container {
+    background-color: #1565C0;
+    padding-top: 50px;
+}
+
+.structure-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.structure-container a::before {
+    content: url('../image/Group\ 52.png');
+    display: inline-block;
+    margin-right: -4px;
+    scale: .55;
+    transform: translate(0, 5px);
+}
+
+.structure-container h1 {
+    text-align: center;
+    font-family: poppins-bold;
+    font-size: 3em;
+    line-height: 55px;
+    color: #eaeaee;
+    margin-top: 50px;
+}
+
+.structure-container h1 span {
+    color: rgba(100, 181, 246, 1);
+}
+
+.structure-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+    margin-top: 70px;
+}
+
+.structure-wrap .wakil {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 200px;
+}
+
+
+.structure-wrap .other{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    justify-content: space-between;  
+    padding: 0 200px;
+    margin-bottom: 55px;
+}
+
+/* style-profile */
+.structure-wrap .profile {
+    width: fit-content;
+    color: #eaeaee;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.structure-wrap h2,.structure-wrap p {
+    text-align: center;
+}
+
+.structure-wrap img {
+    border-radius: 50%;
+    width: 225px;
+    border: 2px solid white;
+}
